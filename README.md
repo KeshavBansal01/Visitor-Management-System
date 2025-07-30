@@ -1,4 +1,5 @@
 Introduction:
+
 1.The web application gives the user two options: Check In and Check Out.
 2.Check In: The Visitor is asked to enter his/her and Host's details.Thereafter,a SMS and E-mail is sent to the Host giving the details of the Visitor.
 3.Check Out: The Visitor is asked to enter his/her E-mail Id for verification and after it the visitor is checked out.
