@@ -27,8 +27,11 @@ Database 'user' and it's Collections are designed as following:
 Clients: Contains details specific to the visitors.
 
 |___Clients
+
         |___name 
+        
         |___email
+        
         |___phone
         
 Hosts: Contains details specific to the hosts.
