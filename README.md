@@ -33,6 +33,10 @@ The application provides two main options: **Check-In** and **Check-Out**.
 The database `user` has **three collections** to avoid redundancy:
 
 ### 1. Clients (Visitor Details)
+Clients
+├── name
+├── email
+└── phone
 
 
 
