@@ -34,9 +34,16 @@ The database `user` has **three collections** to avoid redundancy:
 
 ### 1. Clients (Visitor Details)
 Clients
-├── name
-├── email
-└── phone
+ ├── name
+ ├── email
+ └── phone
+
+Visits
+ ├── email       # Visitor Email
+ ├── checkin     # Check-In Timestamp
+ ├── checkout    # Check-Out Timestamp
+ └── hemail      # Host Email
+
 
 
 
