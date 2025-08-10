@@ -31,21 +31,31 @@ The application provides two main options: **Check-In** and **Check-Out**.
 
 ## 🗄 Database Structure
 The database `user` has **three collections** to avoid redundancy:
+### Clients
+| Field  | Description       |
+|--------|-------------------|
+| name   | Visitor Name       |
+| email  | Visitor Email      |
+| phone  | Visitor Phone      |
 
-### 1. Clients (Visitor Details)
-Clients
- ├── name
- ├── email
- └── phone
+### Hosts
+| Field  | Description       |
+|--------|-------------------|
+| hname  | Host Name          |
+| hemail | Host Email         |
+| hphone | Host Phone         |
 
-Visits
- ├── email       # Visitor Email
- ├── checkin     # Check-In Timestamp
- ├── checkout    # Check-Out Timestamp
- └── hemail      # Host Email
+### Visits
+| Field    | Description         |
+|----------|---------------------|
+| email    | Visitor Email        |
+| checkin  | Check-In Timestamp   |
+| checkout | Check-Out Timestamp  |
+| hemail   | Host Email           |
 
 
 
+I have made 3 collections so as to reduce redundancy in the database. Even if a visitor has visited the office more than once, his details will only be stored once in the Clients collection. The same goes for the Host's Details.
 
 Screenshots:
 Entry Management System's Home Page.
