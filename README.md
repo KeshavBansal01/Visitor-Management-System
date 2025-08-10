@@ -59,6 +59,10 @@ Error Messages.
 
 <img width="1445" height="472" alt="Error3" src="https://github.com/user-attachments/assets/a5d861fb-004b-4c00-8436-8e485ce07b4e" />
 
+## ⚠️ Corner Cases
+1. A visitor **cannot check in** again without first checking out.
+2. A visitor **cannot check out** with an email ID that was never used for check-in.
+3. A visitor **cannot check out** twice.
 
 
 
