@@ -1,60 +1,39 @@
-𝙄𝙣𝙩𝙧𝙤𝙙𝙪𝙘𝙩𝙞𝙤𝙣
+# 🏢 Visitor Management System
 
-1.The web application gives the user two options: Check In and Check Out.
+A simple **web application** for managing visitor check-ins and check-outs with SMS and Email notifications to the host. Designed for offices, events, or any place where visitor tracking is essential.
 
-2.Check In: The Visitor is asked to enter his/her and Host's details.Thereafter,a SMS and E-mail is sent to the Host giving the details of the Visitor.
+---
 
-3.Check Out: The Visitor is asked to enter his/her E-mail Id for verification and after it the visitor is checked out.
+## 📖 Introduction
+The application provides two main options: **Check-In** and **Check-Out**.
 
+1. **Check-In**
+   - Visitor enters their own details along with the host's details.
+   - An SMS and email are sent to the host containing the visitor's information.
 
-Workflow:
+2. **Check-Out**
+   - Visitor enters their registered email ID for verification.
+   - Upon verification, the visitor is checked out of the system.
 
-1.Visitor is given the option to Check-in.
+---
 
-2.Visitor is asked to fill his own details as well as the host's details whom he wants to meet.
+## 🔄 Workflow
+1. Visitor chooses **Check-In**.
+2. Fills in:
+   - **Visitor Details** (Name, Email, Phone)
+   - **Host Details** (Name, Email, Phone)
+3. Visitor may later choose **Check-Out**.
+4. Enters their **email ID** for verification.
+5. After verification, the system checks them out.
+6. Visitors can check in and out independently of other visitors.
 
-3.Visitor is then given the option to Checkout.
+---
 
-4.At the time of checkout, the Visitor is asked to enter his Email-id for verification.
+## 🗄 Database Structure
+The database `user` has **three collections** to avoid redundancy:
 
-5.After this, the visitor is checked out of the system.
+### 1. Clients (Visitor Details)
 
-6.A visitor can check-in and checkout at any time irrespective of the other visitors.
-
-
-Database 'user' and it's Collections are designed as following:
-
-Clients: Contains details specific to the visitors.
-
-|___Clients
-        |___name 
-        |___email
-        |___phone
-        
-Hosts: Contains details specific to the hosts.
-
-|___Hosts
-       |___hname
-       |___hemail 
-       |___hphone
-
-Visits: Contains details specific to the visits by visitors(Check-in - Check-out).
-
-|___Visits
-       |___email
-       |___checkin
-       |___checkout
-       |___hemail
-
-I have made 3 collections so as to reduce redundancy in the database. Even if a visitor has visited the office more than once, his details will only be stored once in the Clients collection. The same goes for the Host's Details.
-
-CORNER CASES:
-
-1.A visitor cannot check-in again if he/she is already checked in and has not checked out.
-
-2.A visitor cannot checkout with an Email-Id that has not been used to Check-in.
-
-3.A visitor cannot checkout again if he/she is already been checked out.
 
 
 Screenshots:
